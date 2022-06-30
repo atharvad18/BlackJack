@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="blackjack.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="logo">
+            <img id="left" src="./images/backround.png" style="height: 150px; background-color: white; width: auto;"></img>
+            <h1><span id="message">Lets Play!</span></h1>
+            <img id="right" src="./images/backround.png" style="height: 150px; background-color: white; width: auto;"></img>
+        </div>
+        
+        
+        <div class="flexbox-1">
+            
+            <div id="your-box">
+                <h2>You: <span id="yourscore">0</span></h2>
+            </div>
+
+            <div id="dealer-box">
+                <h2>Dealer: <span id="dealerscore">0</span></h2> 
+            </div>
+
+        </div> <!--flexbox-1 end here-->
+
+        <div class="flexbox-2">
+            <div>
+                <button class="btn" id = "Hit" style="background-color: blue; color: white;">Hit</button>
+                <button class="btn" id = "Stand" style="background-color: yellow; color: black;">Stand</button>
+                <button class="btn" id = "Deal" style="background-color: red; color: white;">Deal</button>
+            </div>
+            
+        </div>  <!--flexbox-2 end here-->
+
+        <div class="flexbox-3">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Wins</th>
+                        <th>Losses</th>
+                        <th>Draws</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span id="Wins">0</span></td>
+                        <td><span id="Losses">0</span></td>
+                        <td><span id="Draws">0</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>  <!--flexbox-3 end here-->
+    
+    </div>   <!--container end here-->
+    <script src="./blackjack.js"></script>
+</body>
+</html>
